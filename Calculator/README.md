@@ -5,7 +5,7 @@ A small training project built with **HTML, CSS, and JavaScript**.
 
 ---
 
-## 📋 Task (EN translation)
+## 📋 Task
 
 Create a web page with three input fields: two fields for numbers and one for the operation (for example, +, -, *, /).  
 When one of the fields loses focus, save the data to a global object.  
