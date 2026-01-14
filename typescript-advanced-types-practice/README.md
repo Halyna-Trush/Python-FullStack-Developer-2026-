@@ -7,7 +7,7 @@ All functionality is implemented in a single TypeScript file.
 
 ---
 
-## 📋 Task Description
+## 📋 Task
 
 ### Working with TypeScript: Enums and Union
 Create an enum `Days` that contains the days of the week.  
