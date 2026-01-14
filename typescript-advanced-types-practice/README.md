@@ -1,6 +1,6 @@
-🐍 Python FullStack Developer 2026
+# 🐍 Python FullStack Developer 2026
 
-🧩 TypeScript: Enums, Unions, Generics, Interfaces
+## 🧩 TypeScript types practice (Training Task 2)
 
 This repository contains a training task focused on practicing core and advanced TypeScript features.
 All functionality is implemented in a single TypeScript file.
@@ -34,22 +34,6 @@ Create a class `Worker` that implements `IWorker` and add methods for getting an
 
 ---
 
-## ▶️ How to Run
-
-The task is implemented in a single TypeScript file.
-
-You can:
-- open the file in the TypeScript Playground, or
-- compile and run it locally using `tsc`.
-
-Example:
-```bash
-tsc index.ts
-node index.js
-```
-
----
-
 ## 📂 Files
 
-- `index.ts` — complete implementation of all tasks in a single TypeScript file
+- `Task_2.ts` — complete implementation of all tasks in a single TypeScript file
