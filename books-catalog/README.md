@@ -1,16 +1,73 @@
-# React + Vite
+🐍 Python FullStack Developer 2026
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 📚 Books Catalog — React Training Project
 
-Currently, two official plugins are available:
+A training project built with **React** using functional components and hooks.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 📋 Task
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Create a functional component **BooksApp**.
 
-## Expanding the ESLint configuration
+The application should:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Store `books` in state: `Book[]` (`id`, `name`, `author`, `imgUrl`)
+- Store `selectedBookId` in state: `string | null` (used for navigation between pages)
+- On the main page (books list), display a placeholder image, name, author, rating, and a **“Details”** button/link
+- Allow filtering the books list by `id`, `name`, and `author`
+- Provide input fields to add a new book (name, author, genre, rating, description) and an **“Add”** button
+- On the book page, display a placeholder image, name, author, genre, rating, description, a toggleable **“Read”** checkbox, and a **“Back to list”** button
+- `componentDidMount`: log a message to the console when the component is mounted
+- `componentDidUpdate`: log when `books`, `filter`, or `selectedBookId` (navigation) changes
+
+---
+
+## ⚙️ Implementation Notes
+
+- Built using React functional components and hooks (`useState`, `useEffect`, `useMemo`)
+- Navigation is handled via component state (`selectedBookId`)
+- `useEffect` is used as an analogue of `componentDidMount` and `componentDidUpdate` for logging lifecycle events
+- Books state is persisted in `localStorage`
+- Placeholder images are used when a book cover is not provided
+- Controlled inputs are used for filters and the add-book form
+
+---
+
+## ▶️ How to Run
+
+```bash
+npm install
+npm run dev
+```
+
+Open the local development URL provided by Vite in a browser.
+
+---
+
+## 📂 Project Structure
+
+```text
+books-catalog/
+├─ src/
+│  ├─ assets/
+│  │  ├─ books/
+│  │  │  ├─ gone-girl.png
+│  │  │  ├─ the-housemaid.png
+│  │  │  └─ the-silent-patient.png
+│  │  └─ placeholders/
+│  │     └─ book-placeholder.png
+│  ├─ BooksApp.jsx
+│  ├─ BooksApp.css
+│  ├─ App.jsx
+│  ├─ main.jsx
+│  └─ index.css
+├─ public/
+├─ index.html
+├─ package.json
+├─ package-lock.json
+├─ vite.config.js
+├─ eslint.config.js
+├─ .gitignore
+└─ README.md
+```
