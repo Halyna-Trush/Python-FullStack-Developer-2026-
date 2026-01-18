@@ -1,6 +1,6 @@
-🐍 Python FullStack Developer 2026
+# 🐍 Python FullStack Developer 2026
 
-# 📚 Books Catalog — React Training Project
+## 📚 Books Catalog (Training Task 3)
 
 A training project built with **React** using functional components and hooks.
 
